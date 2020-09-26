@@ -1,0 +1,8 @@
+[package]
+name = "system"
+version = "0.1.0"
+authors = ["Erik Moqvist <erik.moqvist@gmail.com>"]
+description = "System services."
+
+[dependencies]
+# foobar = "*"
