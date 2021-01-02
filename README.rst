@@ -1,5 +1,3 @@
-|buildstatus|_
-
 System
 ======
 
@@ -15,7 +13,4 @@ Examples
    def main():
        exit(1)
 
-.. |buildstatus| image:: https://travis-ci.com/eerimoq/mys-system.svg?branch=master
-.. _buildstatus: https://travis-ci.com/eerimoq/mys-system
-
-.. _Mys programming language: https://github.com/eerimoq/mys
+.. _Mys programming language: https://github.com/mys-lang/mys
