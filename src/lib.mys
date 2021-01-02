@@ -1,3 +1,3 @@
 # pylint: disable=unused-argument
 def exit(code: i32):
-    'mys-embedded-c++ std::exit(code);'
+    "mys-embedded-c++ std::exit(code);"
