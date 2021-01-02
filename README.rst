@@ -1,5 +1,5 @@
-System
-======
+Sys
+===
 
 System services in the `Mys programming language`_.
 
