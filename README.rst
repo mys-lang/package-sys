@@ -8,7 +8,7 @@ Examples
 
 .. code-block:: python
 
-   from system import exit
+   from sys import exit
 
    def main():
        exit(1)

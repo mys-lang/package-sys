@@ -1,9 +1,0 @@
-from . import exit
-
-def main(args: [str]):
-    code: i32 = 1
-
-    if len(args) > 1:
-        code = i32(args[1])
-
-    exit(code)
