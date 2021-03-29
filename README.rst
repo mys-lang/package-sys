@@ -13,4 +13,4 @@ Examples
    def main():
        exit(1)
 
-.. _Mys programming language: https://github.com/mys-lang/mys
+.. _Mys programming language: https://mys-lang.org
