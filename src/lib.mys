@@ -1,3 +1,36 @@
-# pylint: disable=unused-argument
 def exit(code: i32):
-    "mys-embedded-c++ std::exit(code);"
+    c"std::exit(code);"
+
+class Statistics:
+    """Various application statistics.
+
+    """
+
+    number_of_allocated_objects: u64
+    number_of_object_decrements: u64
+    number_of_object_frees: u64
+
+def statistics() -> Statistics:
+    """Various statistics about the application.
+
+    """
+
+    number_of_allocated_objects: u64 = 0
+    number_of_object_decrements: u64 = 0
+    number_of_object_frees: u64 = 0
+
+    c"""
+    #ifdef MYS_MEMORY_STATISTICS
+    number_of_allocated_objects = mys::number_of_allocated_objects;
+    number_of_object_decrements = mys::number_of_object_decrements;
+    number_of_object_frees = mys::number_of_object_frees;
+    #endif
+    """
+
+    return Statistics(number_of_allocated_objects,
+                      number_of_object_decrements,
+                      number_of_object_frees)
+
+@test
+def test_statistics():
+    print(statistics())

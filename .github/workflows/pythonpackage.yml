@@ -20,6 +20,8 @@ jobs:
     - name: Test
       run: |
         mys test
+        mys clean
+        env CFLAGS=-DMYS_MEMORY_STATISTICS mys test
 
   release:
     needs: [linux]

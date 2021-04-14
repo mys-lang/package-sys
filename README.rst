@@ -3,14 +3,6 @@ Sys
 
 System services in the `Mys programming language`_.
 
-Examples
-========
-
-.. code-block:: python
-
-   from sys import exit
-
-   def main():
-       exit(1)
+Documentation: https://mys-lang.org/package/sys/latest/index.html
 
 .. _Mys programming language: https://mys-lang.org
