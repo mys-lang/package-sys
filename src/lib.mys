@@ -1,4 +1,4 @@
-def exit(code: i32):
+func exit(code: i32):
     c"std::exit(code);"
 
 class Statistics:
@@ -10,7 +10,7 @@ class Statistics:
     number_of_object_decrements: u64
     number_of_object_frees: u64
 
-def statistics() -> Statistics:
+func statistics() -> Statistics:
     """Various statistics about the application.
 
     """
@@ -32,5 +32,5 @@ def statistics() -> Statistics:
                       number_of_object_frees)
 
 @test
-def test_statistics():
+func test_statistics():
     print(statistics())
