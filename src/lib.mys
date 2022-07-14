@@ -31,6 +31,5 @@ func statistics() -> Statistics:
                       number_of_object_decrements,
                       number_of_object_frees)
 
-@test
-func test_statistics():
+test statistics():
     print(statistics())
